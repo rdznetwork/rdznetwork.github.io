@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RDZ QR SCANNER</title>
+
+<style>
+    video {
+      width: 80%    !important;
+      height: auto   !important;
+    }
+    #reload{
+      margin-top:5px;
+      margin-bottom:10px;
+      padding:5px;
+      background-color: #cf1b27;
+      color: #f3f4f5;
+      border-radius:3px;
+      width: 150px;
+      cursor: pointer;
+    }
+    a{
+      text-decoration: none;
+      color:#20a8d8;
+    }
+    .progress{
+      padding:10px;
+      margin-top:5px;
+    }
+    .progress span{
+      transition: all 500ms ease;
+      background: grey;
+      box-shadow: 1px 2px 3px #999;
+      height: 10px;
+      width: 10px;   
+      display: inline-block;
+      border-radius: 10px;
+      animation: wave 2s ease  infinite;
+    } 
+    .progress span:nth-child(1){  animation-delay: 0; }
+    .progress span:nth-child(2){  animation-delay: 100ms; }
+    .progress span:nth-child(3){  animation-delay: 200ms; }
+    .progress span:nth-child(4){  animation-delay: 300ms; }
+    .progress span:nth-child(5){  animation-delay: 400ms; }
+    .progress span:nth-child(6){  animation-delay: 500ms; }
+    .progress span:nth-child(7){  animation-delay: 600ms; }
+    .progress span:nth-child(8){  animation-delay: 700ms; }
+    @keyframes wave{
+      0%, 40%, 100% { 
+        transform: translate(0, 0);
+        background-color: grey;    
+      }
+      10% {     
+        transform: translate(0, -15px); 
+        background-color: #20a8d8;    
+      }  
+    }
+  </style>
+<script type="text/javascript" src="./qrscan_files/llqrcode.js.download"></script>
+<script type="text/javascript" src="./qrscan_files/webqr.js.download"></script>
+</head>
+<body>
+  <center>
+    <div id="main">
+      <div id="mainbody" style="display: inline;">
+        <div class="progress">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div id="reload" onclick="location.reload();">Reload Camera</div>
+        <div id="outdiv"><video id="v" autoplay=""></video></div>
+      </div>
+    </div>
+    
+
+  </center>
+
+<canvas style="display: none; width: 800px; height: 600px;" id="qr-canvas" width="800" height="600"></canvas>
+
+<script type="text/javascript">load();</script>
+
+
+
+</body>
+</html>
