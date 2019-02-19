@@ -26,7 +26,7 @@ body, html {
 }
 
 .tablink:hover {
-  background-color: #777;
+  background-color: grey;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -43,15 +43,16 @@ body, html {
 #About {background-color: grey;}
 </style>
 </head>
+<center><img src="img/logo.png" alt="RDZNetworkSolutions" style="width:300px; height:auto;"/><br>
 <body>
 
 <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">HOME</button>
 <button class="tablink" onclick="openPage('News', this, 'red')">FITUR</button>
 <button class="tablink" onclick="openPage('Contact', this, 'red')">JASA</button>
-<button class="tablink" onclick="openPage('About', this, 'red')">About</button>
+<button class="tablink" onclick="openPage('About', this, 'red')">DOWN</button>
 
 <div id="Home" class="tabcontent">
-<img src="img/logo.png" alt="RDZNetworkSolutions" style="width:300px; height:auto;"/>
+
   <h3><b>RDZ Network Solutions</b></h3>
   <p><br><br>
 		  Kami hadir untuk membuat semua perkerjaan pemilik warnet atau game center menjadi lebih mudah dan efisien.<br>
@@ -60,8 +61,7 @@ body, html {
 		  Warnet terkhususnya bermode Diskless,<br>
 		  Hotspot / Wifi<br>
 		  <br>
-		  Juga menyediakan jaringan wifi hotspot public</p>
-</div>
+		  Juga menyediakan jaringan wifi hotspot public<br><br>
 
 <div id="News" class="tabcontent">
   <h3>Fitur</h3>
@@ -78,8 +78,6 @@ body, html {
 
 <div id="Contact" class="tabcontent">
   <h3>JASA PEMASANGAN</h3>
-  <p><div style="padding:15px;">
-			<h3>JASA PEMASANGAN</h3>
 			<table class="ey_tpaketwifi" style="font-size:12px;">
 			<tbody><tr><th>PAKET PEMASANGAN</th><th>SISTEM</th><th>BIAYA SEKALI</th></tr>
 			<tr><td>WARNET</td><td>VIRTUAL</td><td>Rp 5.000.000</td></tr>
@@ -93,45 +91,63 @@ body, html {
 			
 			<h3>LANGGANAN JASA MAINTENANCE</h3>
 			<table class="ey_tpaketwifi" style="font-size:12px;">
-			<tbody><tr><th>PAKET LANGGANAN</th><th>SISTEM</th><th>BIAYA PERBULAN</th></tr>
+			<tbody><tr><th>PAKET LANGGANAN</th><th>SISTEM</th><th>BULANAN</th></tr>
 			<tr><td>WARNET</td><td>DISKLESS</td><td>Rp 150.000</td></tr>
 			<tr><td>HOTSPOT</td><td>VOUCHER</td><td>Rp 120.000</td></tr>
 			</tbody></table>
 			<br>
 			<small>
 			<i>• Daftar Pelanggan :</i><br>
-			<marquee behavior="scroll" direction="left">
-			<b>NickyNet (Lrg.Obat Nyamuk), 
-			NickyNet 2 (Jl.Pahlawan), 
-			NickyNet 3 (Manunggal), 
-			DindaNet (Prt.1), 
-			LeoNet 2 (Jl.Pahlawan), 
-			FikryNet (Jl.Nelayan), 
-			KongNet (Jl.Hidayat), 
-			MumbaiNet (Jl.Andalas), 
-			QeyNet (Jl.Ketapang), 
-			SyahrulNet (Jl.Siswa), 
-			SyalfaNet (Jl.Manunggal 1), 
-			SyahnaNet (Jl.P.Gompong), 
-			TataNet (Jl.Pelabuhan), 
-			T-Net (Jl.Panglima Cama), 
-			AbuNet (Jl.Patunas), 
-			AANnet (Jl.Bahari), 
-			ArcomNet (Jl.Ketapang), 
-			Dhimas007Net (Lrg.Obat Nyamuk), 
-			KRNet (Jl.Siswa), 
-			OzilNet , 
-			CyberArena (Jl.Panglima),JW Gaming (Jl.Siswa), </b>
-			</marquee>
-			
-		  
-		</small></div></p>
+			<b>NickyNet (Lrg.Obat Nyamuk), <br>
+			NickyNet 2 (Jl.Pahlawan), <br>
+			NickyNet 3 (Manunggal), <br>
+			DindaNet (Prt.1), <br>
+			LeoNet 2 (Jl.Pahlawan), <br>
+			FikryNet (Jl.Nelayan), <br>
+			KongNet (Jl.Hidayat), <br>
+			MumbaiNet (Jl.Andalas), <br>
+			QeyNet (Jl.Ketapang), <br>
+			SyahrulNet (Jl.Siswa), <br>
+			SyalfaNet (Jl.Manunggal 1), <br>
+			SyahnaNet (Jl.P.Gompong), <br>
+			TataNet (Jl.Pelabuhan), <br>
+			T-Net (Jl.Panglima Cama), <br>
+			AbuNet (Jl.Patunas), <br>
+			AANnet (Jl.Bahari), <br>
+			ArcomNet (Jl.Ketapang), <br>
+			Dhimas007Net (Lrg.Obat Nyamuk), <br>
+			KRNet (Jl.Siswa), <br>
+			OzilNet , <br>
+			CyberArena (Jl.Panglima),<br>
+			JW Gaming (Jl.Siswa), </b> <br>
+		  </small></div></p>
 </div>
 
 <div id="About" class="tabcontent">
-  <h3>KONTAK </h3>
-  <p><b><i><a href="https://rdznetwork.github.io/files/">Copyright</a> &copy; <i id="copyright"><a href="https://rdznetwork.github.io">2018 RDZNetworkSolutions</a></i></b><br/>
-	  <b><i>WA / CALL : 085783347911 | <a target="_blank" href="https://fb.com/adr.ardian">Adrian Ardiansyah Malik</a></i></b><br></p>
+  <h3>DOWN </h3>
+  <p><b>
+HOTSPOT :<br>
+<a href="/files/RDZClient.apk" download>RDZClient.apk</a><br>
+<a href="/files/RDZNETWORK-PAGE.rar" download>RDZNETWORK-PAGE.rar</a><br>
+<a href="/files/RDZ-PAGE.rar" download>RDZ-PAGE.rar</a><br>
+<a href="/files/OTHER-PAGE.rar" download>OTHER-PAGE.rar</a><br><br>
+UTILITY :<br>
+<a href="/files/Hard Disk Sentinel.zip" download>Hard Disk Sentinel.zip</a><br>
+<a href="/files/VNC.rar" download>VNC.rar</a><br>
+<a href="/files/Nox_launcher.rar" download>Nox_launcher.rar</a><br>
+<a href="/files/VBStoEXE.rar" download>VBStoEXE.rar</a><br>
+<a href="/files/YUMI-2.0.5.7.exe" download>YUMI-2.0.5.7.exe</a><br>
+<a href="/files/BitTorrent-Sync.exe" download>BitTorrent-Sync.exe</a><br><br>
+WARNET :<br>
+<a href="/files/winbox.exe" download>winbox.exe</a><br>
+<a href="/files/CyberIndoBilling.rar" download>CyberIndoBilling.rar</a><br>
+<a href="/files/CyberIndoDisk.rar" download>CyberIndoDisk.rar</a><br>
+<a href="/files/CyberIndoUpdater.rar" download>CyberIndoUpdater.rar</a><br><br>
+GAME :<br>
+<a href="/files/PUBG Diskless.rar" download>PUBG Diskless.rar</a><br><br>
+COIN :<br>
+<a href="/files/rdz1.rar" download>RDZ_1.2_clay.zip</a><br>
+<a href="/files/RDZ_2.0_dual.zip" download>RDZ_2.0_dual.zip</a><br></p>
 </div>
 
 <script>
@@ -154,4 +170,7 @@ document.getElementById("defaultOpen").click();
 </script>
    
 </body>
+<br><br>
+<b>Copyright</a> &copy; <i id="copyright"><a href="https://rdznetwork.github.io">2018 RDZNetworkSolutions</a></i></b><br/>
+	  <b><i>WA / CALL : 085783347911 | <a target="_blank" href="https://fb.com/adr.ardian">Adrian Ardiansyah Malik</a></i></b>
 </html> 
